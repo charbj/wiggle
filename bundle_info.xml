@@ -1,0 +1,55 @@
+<!--
+ChimeraX bundle names must start with "ChimeraX-"
+to avoid clashes with package names in pypi.python.org.
+When uploaded to the ChimeraX toolshed, the bundle
+will be displayed without the ChimeraX- prefix.
+-->
+
+<BundleInfo name="wiggle"
+	    version="0.2.1" package="chimerax.wiggle"
+  	    minSessionVersion="1" maxSessionVersion="1">
+
+  <!-- Additional information about bundle source -->
+  <Author>Charles Bayly-Jones</Author>
+  <Email>charles.bayly-jones@monash.edu</Email>
+  <URL>https://www.rbvi.ucsf.edu/chimerax/</URL>
+
+  <!-- Synopsis is a one-line description
+       Description is a full multi-line description -->
+  <Synopsis>Interface for interpreting protein configurational space</Synopsis>
+  <Description>Wiggle is a fully integrated interface of cryoSPARC, cryoDRGN and ChimeraX. It performs
+    complex dimension reduction analyses, clustering and trajectory inference. These seemlessly interface
+    with ChimeraX to enable volumetric visualisation while navigating lower-dimensional embeddings of complex
+    protein conformational environments.
+  </Description>
+
+  <!-- Categories is a list where this bundle should appear -->
+  <Categories>
+    <Category name="General"/>
+  </Categories>
+
+  <!-- Dependencies on other ChimeraX/Python packages -->
+  <!-- This example uses functionality from the Tutorial_Command bundle -->
+  <Dependencies>
+    <Dependency name="ChimeraX-Core" version="~=1.1"/>
+    <Dependency name="ChimeraX-UI" version="~=1.0"/>
+  </Dependencies>
+
+  <!-- Non-Python files that are part of package -->
+  <DataFiles>
+    <DataFile>docs/user/tools/tutorial.html</DataFile>
+    <DataDir>deps</DataDir>
+    <DataDir>resources</DataDir>
+  </DataFiles>
+
+  <Classifiers>
+    <!-- Development Status should be compatible with bundle version number -->
+    <PythonClassifier>Development Status :: 3 - Alpha</PythonClassifier>
+    <PythonClassifier>License :: Freeware</PythonClassifier>
+    <!-- ChimeraX classifiers describe supplied functionality -->
+    <!-- Register a graphical interface tool -->
+    <ChimeraXClassifier>ChimeraX :: Tool :: Wiggle ::
+      General :: Protein conformational dynamics analysis</ChimeraXClassifier>
+  </Classifiers>
+
+</BundleInfo>
