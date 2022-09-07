@@ -23,6 +23,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
   * pyqtgraph
   * scikit-learn
   * torch
+  * sklearn
 
 ## Installation - developmental version
 This is an experimental and developmental version, currently in testing. In the future, Wiggle will be available via the UCSF ChimeraX toolshed. For now, to use Wiggle you must install it manually (see below).
