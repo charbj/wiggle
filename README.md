@@ -36,7 +36,7 @@ Cupy must match your CUDA library versions, otherwise it will complain. Check th
 
 The CUDA libraries must be on the terminal path for cupy to work. Either 1) set the following path before launching ChimeraX via the command line, 2) set the CUDA lib path on your system in your `~/.bashrc` file
       
-      export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH`
+      export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
       
   ### Get dependencies
   
@@ -58,8 +58,23 @@ Launch UCSF ChimeraX (either via GUI or command line) e.g.
       
 In the UCSF ChimeraX command line, run the following command (ensuring you modify the path appropriately for your system):
 
-      devel build ~/path/to/save/software/wiggle/; devel install ~/projects/software/wiggle/
+      devel build ~/path/to/save/software/wiggle/; devel install ~/path/to/save/software/wiggle/
 
 The path should match your git cloned directory...
 
 To launch WIGGLE either run the command `ui tool show wiggle` or launch from `Tools > General > Wiggle`
+
+## Running WIGGLE via the command line
+Wiggle has a packaging feature that compiles cryoSPARC or cryoDRGN output files into the single binary format for ease of sharing, deposition, and distribution. 
+
+While Wiggle will natively read the cryoDRGN and cryoSPARC analysis output, it will also read a compressed single-file format. This single file is easier to share amongst colleagues and can be generated with a simple command. 
+
+    /path/to/chimerax-1.3/bin/python3.9 /path/to/wiggle/src/wiggle.py --help
+    
+## FAQs
+
+### How do I use the cryoSPARC 3D Flex mode?
+This is not currently available, pending further details from the cryoSPARC team. This will be implemented in a future release. It is currently a place holder... sorry!
+
+### I get an error that cupy can't find a specific libXXX.so.X.Y.Z file?
+Make sure your cupy installation exactly matches your cuda version. See installation instructions above.
