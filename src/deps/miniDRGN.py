@@ -1,3 +1,12 @@
+# @Author: Ellen Zhong
+
+# @Last modified by:   Charles Bayly-Jones
+# @Last modified time: 07-Sep-2022
+
+# @License: GNU General Public License v3.0
+# @Copyright: 2016-2019 Tristan Croll
+
+
 import pickle
 import torch
 import torch.nn as nn
