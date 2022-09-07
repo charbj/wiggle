@@ -21,7 +21,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
   * phate
   * umap-learn
   * pyqtgraph
-  * scikit-learn
+  * scikit-image
   * torch
   * sklearn
 
