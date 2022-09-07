@@ -45,7 +45,7 @@ First install [UCSF ChimeraX 1.3](https://www.cgl.ucsf.edu/chimerax/older_releas
 
 Install the above pip packages using the UCSF ChimeraX python
 
-      /path/to/ChimeraX/bin/python3.9 -m pip install cupy-cuda100 mrcfile phate umap-learn pyqtgraph scikit-learn torch
+      /path/to/ChimeraX/bin/python3.9 -m pip install cupy-cuda100 mrcfile phate umap-learn pyqtgraph scikit-image sklearn torch
 
 ### Clone WIGGLE and install into ChimeraX.
 
