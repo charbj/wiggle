@@ -33,7 +33,7 @@ class Wiggle(ToolInstance):
         # Initialize base class.
         super().__init__(session, tool_name)
 
-        self.display_name = "WIGGLE - 0.1.8 beta"
+        self.display_name = "WIGGLE - 0.2.1 dev"
 
         from chimerax.ui import MainToolWindow
         self.tool_window = MainToolWindow(self)
