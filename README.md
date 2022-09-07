@@ -70,6 +70,14 @@ Wiggle has a packaging feature that compiles cryoSPARC or cryoDRGN output files 
 While Wiggle will natively read the cryoDRGN and cryoSPARC analysis output, it will also read a compressed single-file format. This single file is easier to share amongst colleagues and can be generated with a simple command. 
 
     /path/to/chimerax-1.3/bin/python3.9 /path/to/wiggle/src/wiggle.py --help
+
+e.g. 1 - Compile cryoDRGN outputs into single-file format
+
+    /path/to/chimerax-1.3/bin/python3.9 /path/to/wiggle/src/wiggle.py cryodrgn --config config.pkl --weights weights.49.pkl --z_space z.49.pkl --apix 1.6 --output example.npz
+
+e.g. 2 - Compile cryoSPARC outputs into single-file format
+    
+    /usr/local/programs/chimerax-1.3/bin/python3.9 ~/projects/software/wiggle/wiggle_0.2.1/src/wiggle.py 3dva --map cryosparc_P49_J924_map.mrc --components cryosparc_P49_J924_component_*.mrc --particles cryosparc_P49_J924_particles.cs --output example.npz
     
 ## FAQs
 
@@ -78,3 +86,9 @@ This is not currently available, pending further details from the cryoSPARC team
 
 ### I get an error that cupy can't find a specific libXXX.so.X.Y.Z file?
 Make sure your cupy installation exactly matches your cuda version. See installation instructions above.
+
+### How can I explore WIGGLE if I don't have any cryoSPARC or cryoDRGN results?
+[Ellen Zhong](https://github.com/zhonge), the main author behind cryoDRGN, has made some pre-computed results available via [Zenodo](https://zenodo.org/record/4355284#.YxiKXNJBy4o). Check out her [paper](https://www.nature.com/articles/s41592-020-01049-4) for details.
+
+## Screen captures and GUI example
+
