@@ -91,6 +91,13 @@ Make sure your cupy installation exactly matches your cuda version. See installa
 ### How can I explore WIGGLE if I don't have any cryoSPARC or cryoDRGN results?
 [Ellen Zhong](https://github.com/zhonge), the main author behind cryoDRGN, has made some pre-computed results available via [Zenodo](https://zenodo.org/record/4355284#.YxiKXNJBy4o). Check out her [paper](https://www.nature.com/articles/s41592-020-01049-4) for details.
 
+### Volume rendering is slow for large boxes (cryoDRGN or cryoSPARC).
+Before rendering many volumes, start in the interactive mode and tune the cropping and downsampling options. Rendering whole volumes at the original sampling size is usually not necessary and can be cumbersomely slow. To improve speeds try the following:
+
+In cryoDRGN mode, try down sampling to 128 pixels and then find an appropriate cropping to remove unneccessary empty voxel. 
+
+Likewise, in cryoSPARC mode, first crop the volume to remove empty solvent voxels and then downsample by a factor of ~2. 
+
 ## Screen captures and GUI example
 ### Night and day mode examples of the Wiggle UI
 ![WIGGLE night](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle.png)
