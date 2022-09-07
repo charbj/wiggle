@@ -1,6 +1,6 @@
-# @Author: Ellen Zhong
+# @Original author: Ellen Zhong, MIT and Princeton University
 
-# @Last modified by:   Charles Bayly-Jones
+# @Modified by:   Charles Bayly-Jones, Monash University
 # @Last modified time: 07-Sep-2022
 
 # @License: GNU General Public License v3.0
