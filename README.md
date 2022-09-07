@@ -93,7 +93,7 @@ Make sure your cupy installation exactly matches your cuda version. See installa
 ## Screen captures and GUI example
 ### Night and day mode examples of the Wiggle UI
 ![WIGGLE night](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle.png)
-![WIGGLE day](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle2_ui.png)
+![WIGGLE day](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle_ui2.png)
 
 ### Example of Wiggle within the ChimeraX interface
 ![WIGGLE ChimeraX](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle_chimera.png)
