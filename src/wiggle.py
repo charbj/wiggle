@@ -2494,7 +2494,7 @@ class InteractiveWindow(object):
             self.volume_engine = miniSPARC(ui, self.data[0], self.data[1], self.apix)
 
         ui.comboBox_12.clear()
-        [ui.comboBox_12.addItem(''.join(('latent coordinate ', str(i)))) for i in range(len(self.data[2][0]) - 1)]
+        [ui.comboBox_12.addItem(''.join(('latent coordinate ', str(i)))) for i in range(len(self.data[2][0]))]
 
         self.volume_engine.done.connect(lambda: ui.pushButton_25.setEnabled(True))
         self.volume_engine.done.connect(lambda: ui.spinBox_2B.setEnabled(True))
