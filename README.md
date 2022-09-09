@@ -105,3 +105,19 @@ Likewise, in cryoSPARC mode, first crop the volume to remove empty solvent voxel
 
 ### Example of Wiggle within the ChimeraX interface
 ![WIGGLE ChimeraX](https://github.com/charbj/wiggle/blob/main/screengrabs/wiggle_chimera.png)
+
+
+## Useful reading material for conformational flexibility and cryoEM
+-[cryoDRGN](https://www.nature.com/articles/s41592-020-01049-4), & [2](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhong_CryoDRGN2_Ab_Initio_Neural_Reconstruction_of_3D_Protein_Structures_From_ICCV_2021_paper.pdf)
+
+-[3DFlex](https://www.biorxiv.org/content/10.1101/2021.04.22.440893v1)
+
+-[cryoSPARC 3DVA](https://www.sciencedirect.com/science/article/pii/S1047847721000071)
+
+-[AlphaCryo4D](https://www.mdpi.com/1422-0067/23/16/8872/htm)
+
+-[ManifoldEM 1](https://www.pnas.org/doi/10.1073/pnas.1419276111), [2](https://www.nature.com/articles/s41467-020-18403-x), & [3](https://www.biorxiv.org/content/10.1101/2021.06.18.449029v2.full) - also [ManifoldEM GUI](https://github.com/evanseitz/ManifoldEM_Python)
+
+
+
+
