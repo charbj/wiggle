@@ -1,12 +1,12 @@
-from Qt import QtCore
+from PyQt5 import QtCore
 import time
 import numpy as np
 
 class Volumiser(QtCore.QObject):
-    finished = QtCore.Signal()
-    progress = QtCore.Signal(float, float, bool, bool, bool)
-    msg = QtCore.Signal(str)
-    status = QtCore.Signal(bool)
+    finished = QtCore.pyqtSignal()
+    progress = QtCore.pyqtSignal(float, float, bool, bool, bool)
+    msg = QtCore.pyqtSignal(str)
+    status = QtCore.pyqtSignal(bool)
     def __init__(self, ui, session, state, volume_engine, data, apix, mode, flip):
         self.ui = ui
         self.wiggle = session

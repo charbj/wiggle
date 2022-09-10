@@ -2,7 +2,7 @@ import mrcfile
 import numpy as np
 import time
 import cupy as cp
-from Qt import QtCore
+from PyQt5 import QtCore
 from scipy.ndimage import zoom
 from skimage.transform import pyramid_gaussian, pyramid_reduce
 import itertools
@@ -13,8 +13,8 @@ import itertools
 
 
 class miniSPARC(QtCore.QObject):
-    running = QtCore.Signal()
-    done = QtCore.Signal()
+    running = QtCore.pyqtSignal()
+    done = QtCore.pyqtSignal()
     def __init__(self, ui, consensus, components, apix):
         super().__init__()
         self.ui = ui
@@ -132,7 +132,7 @@ class Crop:
             return map[l:h, l:h, l:h]
 
 class FFT(QtCore.QObject):
-    finished = QtCore.Signal()
+    finished = QtCore.pyqtSignal()
     def __init__(self, consensus, components, apix, filter_resolution):
         super().__init__()
         self.consensus_unfil = consensus

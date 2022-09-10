@@ -1,11 +1,11 @@
-from Qt import QtCore
+from PyQt5 import QtCore
 import time
 
 class Embedder(QtCore.QObject):
-    finished = QtCore.Signal()
-    exit = QtCore.Signal()
-    progress = QtCore.Signal(float, float, bool, bool, bool)
-    status = QtCore.Signal(bool)
+    finished = QtCore.pyqtSignal()
+    exit = QtCore.pyqtSignal()
+    progress = QtCore.pyqtSignal(float, float, bool, bool, bool)
+    status = QtCore.pyqtSignal(bool)
     def __init__(self, ui, technique_index, data_path, frac, subset: bool):
         self.ui = ui
         self.technique = technique_index
