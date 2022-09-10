@@ -48,7 +48,7 @@ will be displayed without the ChimeraX- prefix.
     <PythonClassifier>License :: Freeware</PythonClassifier>
     <!-- ChimeraX classifiers describe supplied functionality -->
     <!-- Register a graphical interface tool -->
-    <ChimeraXClassifier>ChimeraX :: Tool :: Wiggle ::
+    <ChimeraXClassifier>ChimeraX :: Tool :: wiggle ::
       General :: Protein conformational dynamics analysis</ChimeraXClassifier>
   </Classifiers>
 
