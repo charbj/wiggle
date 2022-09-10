@@ -1,11 +1,11 @@
-from PyQt5 import QtCore
+from Qt import QtCore
 import time
 import numpy as np
 
 class Clusterer(QtCore.QObject):
-    finished = QtCore.pyqtSignal()
-    progress = QtCore.pyqtSignal(float, float, bool, bool, bool)
-    status = QtCore.pyqtSignal(bool)
+    finished = QtCore.Signal()
+    progress = QtCore.Signal(float, float, bool, bool, bool)
+    status = QtCore.Signal(bool)
     def __init__(self, data, clusters, method):
         self.data = data
         self.clusters = clusters
