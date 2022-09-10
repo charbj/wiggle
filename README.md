@@ -24,6 +24,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
   * scikit-image
   * torch
   * sklearn
+  * yaml
 
 ## Installation - developmental version
 This is an experimental and developmental version, currently in testing. In the future, Wiggle will be available via the UCSF ChimeraX toolshed. For now, to use Wiggle you must install it manually (see below).
@@ -45,7 +46,7 @@ First install [UCSF ChimeraX 1.3](https://www.cgl.ucsf.edu/chimerax/older_releas
 
 Install the above pip packages using the UCSF ChimeraX python
 
-      /path/to/ChimeraX/bin/python3.9 -m pip install cupy-cuda100 mrcfile phate umap-learn pyqtgraph scikit-image sklearn torch
+      /path/to/ChimeraX/bin/python3.9 -m pip install cupy-cuda100 mrcfile phate umap-learn pyqtgraph scikit-image sklearn torch yaml
 
 ### Clone WIGGLE and install into ChimeraX.
 
