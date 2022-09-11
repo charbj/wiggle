@@ -20,7 +20,7 @@ import os.path
 import time
 import subprocess
 
-class Wiggle(ToolInstance):
+class wiggle(ToolInstance):
 
     SESSION_ENDURING = False    # Does this instance persist when session closes
     SESSION_SAVE = True         # We do save/restore in sessions
@@ -79,6 +79,6 @@ class Wiggle(ToolInstance):
         # have saved the tool name during take_snapshot() (from self.tool_name, inherited
         # from ToolInstance) and used that saved tool name.  There are pros and cons to
         # both approaches.
-        inst = class_obj(session, "Wiggle")
+        inst = class_obj(session, "wiggle")
         inst.line_edit.setText(data['current text'])
         return inst
