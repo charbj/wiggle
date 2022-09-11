@@ -14,6 +14,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
 
 ## Video tutorials
 1. [Setup & installation](https://youtu.be/y99k88MszrY)
+2. [Bundle results into .npz format](https://youtu.be/k_-ghuqPsCM)
 
 ## Dependencies
 * UCSF ChimeraX 1.3 (Try `git checkout wiggle_0.2.2X1.4` for ChimeraX 1.4; Should work on versions below 1.3 but not tested).
