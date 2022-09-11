@@ -12,6 +12,9 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
 * Rapid volume rendering to enable near realtime feedback.
 * Import and export cryoSPARC data file times to enable further analysis.
 
+## Video tutorials
+1. [Setup & installation](https://youtu.be/y99k88MszrY)
+
 ## Dependencies
 * UCSF ChimeraX 1.3 (not currently comptatible with version 1.4, should work on versions below 1.3 but not tested).
 * CryoSPARC and cryoDRGN functionality depends on a CUDA accelerated GPU. CPU can work in principal, although it's quite slow and not currently implemented.
