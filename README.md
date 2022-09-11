@@ -25,7 +25,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
   * umap-learn
   * pyqtgraph
   * scikit-image
-  * torch
+  * torch [useful installation guide](https://varhowto.com/install-pytorch-cuda-9-2/)
   * sklearn
   * pyyaml
 
