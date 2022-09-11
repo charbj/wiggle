@@ -2069,7 +2069,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "WIGGLE - 0.1.6 alpha"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "WIGGLE - 0.2.2 dev"))
         # self.textBrowser.setHtml(_translate("MainWindow",
         #                                     "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
         #                                     "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
