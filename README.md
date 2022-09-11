@@ -16,6 +16,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
 1. [Setup & installation (6:53)](https://youtu.be/y99k88MszrY)
 2. [Bundle (cryoDRGN or cryoSPARC 3DVA) results into .npz format (7:39)](https://youtu.be/k_-ghuqPsCM)
 3. [User interface overview (5:13)](https://youtu.be/aIonC1oEYoo)
+4. [A Wiggle/cryoDRGN walkthrough (in depth; 15:07)](https://youtu.be/IjUIO7fd5RI)
 
 ## Dependencies
 * UCSF ChimeraX 1.3 (Try `git checkout wiggle_0.2.2X1.4` for ChimeraX 1.4; Should work on versions below 1.3 but not tested).
