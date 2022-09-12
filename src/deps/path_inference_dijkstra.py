@@ -225,7 +225,7 @@ class Path(QtCore.QObject):
             pos = np.vstack([pos, vector])
             # if _ % 10 == 0:
             #     print("Stepping by %s" % diff)
-            QtWidgets.qApp.processEvents()
+            QtCore.QCoreApplication.processEvents()
         return vector, pos
 
     def cost_function(self, histo):
@@ -392,7 +392,7 @@ class Path(QtCore.QObject):
                     new_bead = bead + diff
                     new_beads = np.vstack((new_beads, new_bead))
                     total_diff =+ np.abs(diff)
-                    QtWidgets.qApp.processEvents()
+                    QtCore.QCoreApplication.processEvents()
                 if np.linalg.norm(total_diff) < 0.00025*N_beads:
                     break
                 new_beads = np.vstack((new_beads, beads[-1]))
