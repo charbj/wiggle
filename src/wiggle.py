@@ -343,7 +343,7 @@ class Ui_MainWindow(object):
                     progress = 100 * ((time.time() - t0) / ETA)
                     self.progressBar_7.setValue(int(progress))
                     self.timer.start(50)
-                    QtWidgets.qApp.processEvents()
+                    QtCore.QCoreApplication.processEvents()
             except:
                 print('no good - problem in reportProgress function')
 
@@ -2511,7 +2511,7 @@ class InteractiveWindow(object):
             ui.pushButton_25.setEnabled(False)
             ui.spinBox_2B.setEnabled(False)
             ui.spinBox_9.setEnabled(False)
-            QtWidgets.qApp.processEvents()
+            QtCore.QCoreApplication.processEvents()
             if ui.doubleSpinBox_10.isEnabled() and ui.doubleSpinBox_10.value() > 0:
                 self.volume_engine.apix = ui.doubleSpinBox_10.value()
                 self.volume_engine.apix_curr = ui.doubleSpinBox_10.value()
