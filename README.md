@@ -19,7 +19,7 @@ Wiggle is a software package that integrates within [UCSF ChimeraX](https://www.
 4. [A Wiggle/cryoDRGN walkthrough (in depth; 15:07)](https://youtu.be/IjUIO7fd5RI)
 
 ## Dependencies
-* UCSF ChimeraX 1.3 (Try `git checkout wiggle_0.2.2X1.4` for ChimeraX 1.4; Should work on versions below 1.3 but not tested).
+* UCSF ChimeraX >=1.3 (Should work on versions below 1.3 but not tested).
 * CryoSPARC and cryoDRGN functionality depends on a CUDA accelerated GPU. CPU can work in principal, although it's quite slow and not currently implemented.
 * The following pip-installable packaged:
   * cupy_cuda100 - !! Important that this matches your CUDA version. Here CUDA 10.0
