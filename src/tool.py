@@ -12,7 +12,7 @@
 """ Import all dependencies """
 from chimerax.core.tools import ToolInstance
 from chimerax.core import logger
-from PyQt5 import QtCore, QtGui, QtWidgets
+from Qt import QtCore, QtGui, QtWidgets
 import pyqtgraph as pg
 import numpy as np
 from functools import partial, lru_cache
@@ -33,7 +33,7 @@ class wiggle(ToolInstance):
         # Initialize base class.
         super().__init__(session, tool_name)
 
-        self.display_name = "WIGGLE - 0.2.1 dev"
+        self.display_name = "WIGGLE - 0.2.2 dev"
 
         from chimerax.ui import MainToolWindow
         self.tool_window = MainToolWindow(self)

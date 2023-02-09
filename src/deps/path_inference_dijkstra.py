@@ -11,14 +11,14 @@ from .dijkstra_modified import Graph
 # from dijkstra_modified import Graph
 import time
 # sparseimport
-from PyQt5 import QtCore, QtWidgets
+from Qt import QtCore, QtWidgets
 
 
 class Path(QtCore.QObject):
-    finished = QtCore.pyqtSignal()
-    exit = QtCore.pyqtSignal()
-    progress = QtCore.pyqtSignal(float, float, bool, bool, bool)
-    status = QtCore.pyqtSignal(bool)
+    finished = QtCore.Signal()
+    exit = QtCore.Signal()
+    progress = QtCore.Signal(float, float, bool, bool, bool)
+    status = QtCore.Signal(bool)
     def __init__(self, input_data, learn, wiener_width, median_width, resolution, spawn, num_minima, coupling_const, spring_const):
         self.dataPth = input_data
         self.data = input_data
@@ -225,7 +225,7 @@ class Path(QtCore.QObject):
             pos = np.vstack([pos, vector])
             # if _ % 10 == 0:
             #     print("Stepping by %s" % diff)
-            QtWidgets.qApp.processEvents()
+            QtCore.QCoreApplication.processEvents()
         return vector, pos
 
     def cost_function(self, histo):
@@ -392,7 +392,7 @@ class Path(QtCore.QObject):
                     new_bead = bead + diff
                     new_beads = np.vstack((new_beads, new_bead))
                     total_diff =+ np.abs(diff)
-                    QtWidgets.qApp.processEvents()
+                    QtCore.QCoreApplication.processEvents()
                 if np.linalg.norm(total_diff) < 0.00025*N_beads:
                     break
                 new_beads = np.vstack((new_beads, beads[-1]))

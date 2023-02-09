@@ -9,7 +9,7 @@ import argparse, textwrap
 import os, shutil
 
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+from Qt import QtCore, QtGui, QtWidgets
 from functools import partial
 from math import floor
 
@@ -343,7 +343,7 @@ class Ui_MainWindow(object):
                     progress = 100 * ((time.time() - t0) / ETA)
                     self.progressBar_7.setValue(int(progress))
                     self.timer.start(50)
-                    QtWidgets.qApp.processEvents()
+                    QtCore.QCoreApplication.processEvents()
             except:
                 print('no good - problem in reportProgress function')
 
@@ -2069,7 +2069,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "WIGGLE - 0.1.6 alpha"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "WIGGLE - 0.2.2 dev"))
         # self.textBrowser.setHtml(_translate("MainWindow",
         #                                     "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
         #                                     "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
@@ -2083,7 +2083,7 @@ class Ui_MainWindow(object):
                                               "</style></head><body style=\" font-family:\'Noto Sans\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
                                               "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:7pt; font-weight:600;\">Charles Bayly-Jones 2021</span></p>\n"
                                               "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:\'MS Shell Dlg 2\'; font-size:7pt; font-weight:600;\"><br /></p>\n"
-                                              "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:7pt; font-weight:600;\">help.wiggle@gmail.com</span></p>\n"
+                                              "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:7pt; font-weight:600;\">wiggle.help@gmail.com</span></p>\n"
                                               "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:7pt;\"> </span></p>\n"
                                               "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'MS Shell Dlg 2\'; font-size:7pt; font-weight:600;\">Monash University, Australia</span></p></body></html>"))
         self.pushButton_8.setText(_translate("MainWindow", "Load latent (Z) space (.pkl)"))
@@ -2346,7 +2346,6 @@ class InteractiveWindow(object):
         self.labels = None
         self.embedding = None
         self.data = ''
-        self.update_signal = QtCore.pyqtSignal(int, float)
 
         # Set up the pyqtgraph
         self.graphicsView = pg.GraphicsLayoutWidget(centralWidget)
@@ -2512,7 +2511,7 @@ class InteractiveWindow(object):
             ui.pushButton_25.setEnabled(False)
             ui.spinBox_2B.setEnabled(False)
             ui.spinBox_9.setEnabled(False)
-            QtWidgets.qApp.processEvents()
+            QtCore.QCoreApplication.processEvents()
             if ui.doubleSpinBox_10.isEnabled() and ui.doubleSpinBox_10.value() > 0:
                 self.volume_engine.apix = ui.doubleSpinBox_10.value()
                 self.volume_engine.apix_curr = ui.doubleSpinBox_10.value()

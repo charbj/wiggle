@@ -9,7 +9,7 @@ import pickle
 import torch
 import torch.nn as nn
 import numpy as np
-from PyQt5 import QtCore
+from Qt import QtCore
 import mrcfile
 import math
 
@@ -505,8 +505,8 @@ class fft:
         return sym_ht
 
 class miniDRGN(QtCore.QObject):
-    running = QtCore.pyqtSignal()
-    done = QtCore.pyqtSignal()
+    running = QtCore.Signal()
+    done = QtCore.Signal()
     def __init__(self, ui, config, weights, apix):
         self.ui = ui
         self.config = config
