@@ -70,7 +70,7 @@ Launch UCSF ChimeraX (either via GUI or command line) e.g.
       
 In the UCSF ChimeraX command line, run the following command (ensuring you modify the path appropriately for your system):
 
-      devel build ~/path/to/where/you/saved/wiggle/; devel install ~/path/to/where/you/saved/wiggle/
+      devel clean ~/path/to/where/you/saved/wiggle; devel build ~/path/to/where/you/saved/wiggle/; devel install ~/path/to/where/you/saved/wiggle/
 
 The path should match your git cloned directory...
 
